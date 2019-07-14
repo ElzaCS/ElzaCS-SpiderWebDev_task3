@@ -1,0 +1,145 @@
+body {
+  background-color: black;
+  color: white;
+}
+.page-header {
+  background-color:#666699;
+  color:white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 350px;
+  top: 0;
+  width: 50%; /* half width */
+  height: 85%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  text-align: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;  /*white-grey*/
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 5px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  text-align: center;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 6px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+label {
+  color:black;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+td {
+font-size: 20px;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 5px 9px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  background-color: #b3b3cc;
+  text-align: center;
+  width: 99%;
+  height: 150px;
+  margin: 12px 0 6px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 27%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  background-color: #ffcc99;
+  border: 5px;
+  padding: 8px;
+  width: 95%;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 8px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 30%) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 50%;
+  }
+}
